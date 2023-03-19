@@ -60,3 +60,9 @@ async function mockAPI() {
     });
     console.log(response)
 }
+
+function handleSignOut() {
+    localStorage.removeItem("access")
+    localStorage.removeItem("refresh")
+    localStorage.removeItem("payload")
+}
